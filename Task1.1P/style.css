@@ -1,0 +1,133 @@
+/* Reset and basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  color: #333;
+  background-color: grey;
+}
+
+/* Navigation */
+nav {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #337ab7;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #23527c;
+}
+
+/* Header image using HTML img */
+.hero-banner {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.intro-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 26px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.hero-banner:hover .intro-text {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+/* Intro/Profile section */
+.intro-section {
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Projects section */
+.portfolio {
+  text-align: center;
+  padding: 30px 20px 50px;
+}
+.divider {
+  width: 60px;
+  border: 2px solid #4a4a4a;
+  margin: 5px auto 20px;
+}
+.portfolio h2 {
+  color: #2f2f2f;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 35px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+.project-card img {
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.project-card p {
+  max-width: 320px;
+  font-size: 15px;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+/* Gallery section */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.photo-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
