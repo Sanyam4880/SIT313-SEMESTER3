@@ -1,0 +1,11 @@
+.SANYAM {
+  display: flex;           
+  align-items: center;     
+  gap: 10px;              
+  justify-content: center; 
+}
+
+.SANYAM input {
+  flex: 1;                
+  max-width: 300px;        
+}   

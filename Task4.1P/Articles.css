@@ -1,0 +1,20 @@
+.articles {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.card {
+  width: 20%;    
+}
+
+.card img {
+  width: 300px;
+  height: 150px;
+}
+
+

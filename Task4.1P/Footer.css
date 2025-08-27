@@ -1,0 +1,39 @@
+footer {
+  background-color: gray;
+  color: black;
+}
+
+.linking {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linking ul {
+  list-style: none;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  gap: 10px;
+}
+
+.app img {
+  width: 30px;
+  height: 30px;
+}
+
+.bott {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bott ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0 0;
+  list-style: none;
+}

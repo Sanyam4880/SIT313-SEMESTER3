@@ -1,0 +1,19 @@
+.tutors {
+  text-align: center; 
+}
+
+.box {
+  display: flex;          
+  justify-content: center; 
+  gap: 200px;               
+}
+
+.cards{
+  width: 20%; 
+}
+.card img {
+  width: 300px;
+  height: 150px;
+}
+
+
