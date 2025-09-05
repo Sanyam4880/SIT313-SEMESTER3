@@ -1,0 +1,10 @@
+.NewPostBar {
+  background-color: #e525eb; 
+  color: white;
+  font-weight: bold;
+  text-align: center;   
+  padding: 10px;
+  width: 600px;         
+  margin: 20px auto;    
+  border-radius: 7px;
+}
