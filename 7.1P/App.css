@@ -1,0 +1,174 @@
+/* App.css */
+
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body background */
+body {
+  background-color: #f5f6fa;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  position: fixed; /* keeps it on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: #282c34;
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar h3 {
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4e8cff;
+}
+
+.nav-links button {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.nav-links button:hover {
+  background-color: darkred;
+}
+
+/* ---------------- Container for pages ---------------- */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 40px; /* leave space for fixed navbar */
+  min-height: calc(100vh - 60px);
+  text-align: center;
+}
+
+/* ---------------- Form Card ---------------- */
+.form-card {
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page headings */
+.page-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="password"] {
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.form-card button {
+  padding: 12px 15px;
+  background-color: #4e8cff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 5px;
+}
+
+.form-card button:hover {
+  background-color: #3a6fe0;
+}
+
+/* Error messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Links below forms */
+.page-container p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.page-container p a {
+  color: #4e8cff;
+  text-decoration: none;
+}
+
+.page-container p a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- Home Page ---------------- */
+.home-container h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.home-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.home-container button {
+  padding: 10px 20px;
+  background-color: crimson;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home-container button:hover {
+  background-color: darkred;
+}
