@@ -1,0 +1,99 @@
+/* ✅ Global reset to avoid overflow */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ✅ Navbar container */
+.navbar {
+  position: fixed; /* stays at top */
+  top: 0;
+  left: 0;
+  width: 100%; /* full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5vw; /* responsive horizontal padding */
+  background-color: #1f1f1f;
+  color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s;
+}
+
+/* ✅ Brand / logo */
+.navbar h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ✅ Navigation links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ✅ Links styling */
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4e8cff;
+  background-color: rgba(78, 140, 255, 0.1);
+}
+
+/* ✅ Logout button styling */
+.nav-links button {
+  background-color: #dc3545;
+  border: none;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links button:hover {
+  background-color: #a71d2a;
+  transform: translateY(-1px);
+}
+
+/* ✅ Responsive design */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    width: 100%;
+    text-align: center;
+  }
+}
