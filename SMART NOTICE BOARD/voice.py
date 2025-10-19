@@ -26,5 +26,4 @@ while True:
         print(" Could not understand audio")
     except Exception as e:
         print(f" Error sending to ESP32: {e}")
-make chngs in this
-without symbols nd long msgs should rotate
+
