@@ -18,7 +18,7 @@ while True:
         text = recognizer.recognize_google(audio)
         print(f" You said: {text}")
 
-        # 📡 Send text to ESP32
+        # Send text to ESP32
         r = requests.get(ESP32_URL, params={"msg": text})
         print(f" Sent to ESP32. Status code: {r.status_code}")
 
