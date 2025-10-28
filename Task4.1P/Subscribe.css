@@ -1,11 +1,20 @@
 .SANYAM {
-  display: flex;           
-  align-items: center;     
-  gap: 10px;              
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .SANYAM input {
-  flex: 1;                
-  max-width: 300px;        
-}   
+  max-width: 250px;
+  padding: 5px;
+}
+
+.SANYAM button {
+  padding: 6px 12px;
+  background: #646cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
