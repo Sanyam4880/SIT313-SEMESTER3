@@ -1,39 +1,18 @@
 footer {
   background-color: gray;
   color: black;
+  padding: 20px;
+  text-align: center;
 }
 
 .linking {
   display: flex;
   justify-content: space-between;
-}
-
-.linking ul {
-  list-style: none;
-  padding: 0;
-}
-
-.app {
-  display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .app img {
-  width: 30px;
-  height: 30px;
-}
-
-.bott {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.bott ul {
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 10px 0 0 0;
-  list-style: none;
+  width: 25px;
+  height: 25px;
 }
