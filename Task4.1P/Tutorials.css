@@ -7,15 +7,39 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px; /* spacing between tutorial cards */
+  margin-top: 20px;
 }
 
 .cards {
-  width: 250px;
+  width: 280px;
+  text-align: center;
 }
 
 .cards img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cards h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.cards p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    gap: 30px;
+  }
+
+  .cards {
+    width: 90%;
+  }
 }
 
